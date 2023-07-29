@@ -26,6 +26,6 @@ doc/api/
 .flutter-plugins
 .flutter-plugins-dependencies
 *
-!DartProjects/free-Pos-customized/v1/lib
+!/v1/lib/*
 
 
