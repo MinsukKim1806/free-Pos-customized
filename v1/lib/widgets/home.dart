@@ -11,14 +11,15 @@ Container customMainContainer(){
       mainAxisSize: MainAxisSize.max,
       children: [
         Flexible (
-          flex: 60,
+          flex: 65,
           child: menuContainer(),
         ),
-        SizedBox(width: 10,),
+        SizedBox(width: 5,),
         Flexible (
           flex: 35,
           child: ordersContainer(),
         ),
+        SizedBox(width: 5,),
       ],
     )
   );

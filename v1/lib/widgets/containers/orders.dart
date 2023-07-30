@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 Container ordersContainer(){
-  return Container(color: Colors.white,
+  return Container(color: Color.fromARGB(255, 239, 240, 240),
     child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Flexible (
-          flex: 80,
+          flex: 90,
           child: Container(color: Colors.white,
             child: Container(
             color: Colors.white,
@@ -20,16 +20,17 @@ Container ordersContainer(){
             ),
           ),
         ),
-        const SizedBox(height:10),
+        // const SizedBox(height:10),
         Flexible (
           flex: 10,
-          child: Container(color: Colors.white,
+          child: Container(color: Color.fromARGB(255, 239, 240, 240),
             child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                padding: const EdgeInsets.only(left: 30.0, right: 30.0),
+                margin: const EdgeInsets.only(left: 20.0, right: 20.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,
@@ -49,9 +50,9 @@ Container ordersContainer(){
                   ),
                 ),
               ),
-              const SizedBox(width: 10,),
               Container(
-                padding: const EdgeInsets.only(left: 40.0, right: 40.0),
+                padding: const EdgeInsets.only(left: 60.0, right: 60.0),
+                margin: const EdgeInsets.only(left: 20.0, right: 20.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,

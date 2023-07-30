@@ -13,7 +13,7 @@ Container customCashierContainer(){
             color: Colors.white,
           child: const Center(
             child: Text(
-              'List of payments for the day',
+              'List of recipts for the day',
               style: TextStyle(fontSize: 25),
             ),
           ),
@@ -38,7 +38,7 @@ Container customCashierContainer(){
                 ),
                 child: const Center(
                   child: Text(
-                    'Print daily report',
+                    'Print daily recipts',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
