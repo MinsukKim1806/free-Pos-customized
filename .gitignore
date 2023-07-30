@@ -141,7 +141,6 @@ v1/test/widget_test.dart
 .gitignore
 v1/.metadata
 v1/analysis_options.yaml
-v1/pubspec.yaml
 v1/web/favicon.png
 v1/web/index.html
 v1/web/manifest.json

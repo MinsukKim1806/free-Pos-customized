@@ -1,7 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:v1/widgets/cashier.dart';
-import 'package:v1/widgets/reports.dart';
+// import 'package:v1/widgets/reports.dart';
 import 'package:v1/widgets/settings.dart';
 
 import 'widgets/home.dart';
@@ -90,9 +91,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     maxHeight: 150,
                     maxWidth: 150,
                   ),
-                  // child: Image.asset(
-                  //   'assets/images/easy_sidemenu.png',
-                  // ),
                 ),
                 const Divider(
                   indent: 8.0,
@@ -143,21 +141,21 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     )),
               ),
-              SideMenuItem(
-                title: 'Reports',
-                onTap: (index, _) {
-                  sideMenu.changePage(index);
-                },
-                icon: const Icon(Icons.file_copy_rounded),
-              ),
-              SideMenuItem(
-                builder: (context, displayMode) {
-                  return const Divider(
-                    endIndent: 8,
-                    indent: 8,
-                  );
-                },
-              ),
+              // SideMenuItem(
+              //   title: 'Reports',
+              //   onTap: (index, _) {
+              //     sideMenu.changePage(index);
+              //   },
+              //   icon: const Icon(Icons.file_copy_rounded),
+              // ),
+              // SideMenuItem(
+              //   builder: (context, displayMode) {
+              //     return const Divider(
+              //       endIndent: 8,
+              //       indent: 8,
+              //     );
+              //   },
+              // ),
               SideMenuItem(
                 title: 'Settings',
                 onTap: (index, _) {
@@ -178,7 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 customMainContainer(),
                 customCashierContainer(),
-                customReportContainer(),
+                // customReportContainer(),
                 customSettingsContainer(),
               ],
             ),

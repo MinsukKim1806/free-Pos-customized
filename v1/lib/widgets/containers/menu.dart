@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Container manuContainer(){
+Container menuContainer(){
   return Container(color: Colors.white,
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -14,7 +14,7 @@ Container manuContainer(){
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
               Container(
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,
@@ -36,7 +36,7 @@ Container manuContainer(){
               ),
               const SizedBox(width: 10,),
               Container(
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,
@@ -58,7 +58,7 @@ Container manuContainer(){
               ),
               const SizedBox(width: 10,),
               Container(
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,
@@ -80,7 +80,7 @@ Container manuContainer(){
               ),
               const SizedBox(width: 10,),
               Container(
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,
@@ -102,7 +102,7 @@ Container manuContainer(){
               ),
               const SizedBox(width: 10,),
               Container(
-                padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                 height: 40.0,
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,

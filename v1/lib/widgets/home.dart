@@ -12,7 +12,7 @@ Container customMainContainer(){
       children: [
         Flexible (
           flex: 60,
-          child: manuContainer(),
+          child: menuContainer(),
         ),
         SizedBox(width: 10,),
         Flexible (

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-Container customCashierContainer(){
- return Container(color: Color.fromARGB(255, 239, 240, 240),
+Container customReportContainer(){
+  return Container(color: Color.fromARGB(255, 239, 240, 240),
     child: Column (
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -13,7 +13,7 @@ Container customCashierContainer(){
             color: Colors.white,
           child: const Center(
             child: Text(
-              'List of payments for the day',
+              'List of payments for the month',
               style: TextStyle(fontSize: 25),
             ),
           ),
@@ -38,7 +38,7 @@ Container customCashierContainer(){
                 ),
                 child: const Center(
                   child: Text(
-                    'Print daily report',
+                    'Print monthly report',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
