@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:easy_sidemenu/easy_sidemenu.dart';
-import 'package:v1/widgets/cashier.dart';
-import 'package:v1/widgets/settings.dart';
+import 'package:v1/src/widgets/cashier.dart';
+import 'package:v1/src/widgets/settings.dart';
 
-import 'widgets/home.dart';
+import 'src/widgets/home.dart';
 
 
 void main() {
