@@ -7,10 +7,6 @@ import 'package:path/path.dart';
 import 'models/category.dart';
 import 'models/orders.dart';
 
-import 'package:logging/logging.dart';
-
-final log = Logger('ExampleLogger');
-
 const String TableName = 'Orders';
 const String CategoryTable = 'Category';
 const String MenuTable = 'Menu';
