@@ -38,7 +38,7 @@ dependencies:
   easy_sidemenu: ^0.5.0
   sqflite: ^2.3.0                 # Support iOS & Adroind
   path_provider: ^2.0.15          # Path finder to save DB
-  path: ^1.6.2                    # Path combinator
+  path: ^1.8.3                    # Path combinator
 
 dev_dependencies:
   flutter_test:
