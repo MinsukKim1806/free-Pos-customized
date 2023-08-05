@@ -1,23 +1,29 @@
-
 import 'package:flutter/material.dart';
+
 import 'package:easy_sidemenu/easy_sidemenu.dart';
-import 'package:v1/widgets/cashier.dart';
-// import 'package:v1/widgets/reports.dart';
-import 'package:v1/widgets/settings.dart';
+import 'package:v1/src/widgets/cashier.dart';
+import 'package:v1/src/widgets/settings.dart';
+import 'package:v1/utils/sqlite/db_helper.dart';
 
-import 'widgets/home.dart';
+import 'src/widgets/home.dart';
 
+final dbHelper = DatabaseHelper();
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dbHelper.init();
+  await dbHelper.getAllCategories();
+  await dbHelper.getAllMenus();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+  
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       title: 'Miso Restaurant Pos',
       theme: ThemeData(
@@ -141,21 +147,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     )),
               ),
-              // SideMenuItem(
-              //   title: 'Reports',
-              //   onTap: (index, _) {
-              //     sideMenu.changePage(index);
-              //   },
-              //   icon: const Icon(Icons.file_copy_rounded),
-              // ),
-              // SideMenuItem(
-              //   builder: (context, displayMode) {
-              //     return const Divider(
-              //       endIndent: 8,
-              //       indent: 8,
-              //     );
-              //   },
-              // ),
               SideMenuItem(
                 title: 'Settings',
                 onTap: (index, _) {
